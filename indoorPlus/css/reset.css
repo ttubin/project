@@ -1,0 +1,303 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* 
+    PROJECT NAME    : IndoorPlus+
+    PROJECT DATE    : 2022/03/30-31
+    PROJECT AUTHOR  : 뚜2 (ttubiny@gmail.com)
+    BROWSER         : Chrome
+*/
+/* ---------------------------------------- RESET ---------------------------------------- */
+*, ::before, ::after {
+    z-index: 0; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1; 
+    color: inherit; 
+    font-size: inherit; 
+    font-weight: inherit; 
+    text-decoration: inherit; 
+    font-style: inherit; 
+    border: 0 solid transparent; 
+    outline: 0 solid transparent; 
+    vertical-align: baseline; 
+    background: transparent none center center no-repeat; 
+    background-size: 100%; 
+    -webkit-background-size: 100%; 
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -moz-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+    text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+html, body {
+    overflow-x: hidden; 
+    position: relative; 
+    width: 100%; 
+    height: 100%; 
+    color: #171717; 
+    font-size: 16px; 
+    font-weight: 400; 
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+
+ul, li, ol {
+    list-style: none; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit; 
+    font-weight: inherit; 
+}
+
+nav, img, fieldset, video, iframe {
+    display: block; 
+}
+
+table {
+    width: 100%; 
+    table-layout: fixed; 
+}
+
+table, tr, td, th, thead, tbody, tfoot, caption {
+    border-collapse: collapse; 
+    border-spacing: 0; 
+}
+
+input, textarea, button {
+    display: block; 
+    color: #171717; 
+    font-size: 16px; 
+    font-weight: 400; 
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+
+label, button, [type=button], [type=submit], [type=reset], a {
+    color: inherit; 
+    cursor: pointer; 
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none; 
+}
+
+input, select, option {
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    border-radius: 0; 
+}
+
+textarea {
+    resize: none; 
+}
+
+
+
+/* ---------------------------------------- FONT ---------------------------------------- */
+@font-face {
+    font-family: 'Pretendard-Regular'; 
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff'); 
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+
+
+/* ---------------------------------------- CLASS ---------------------------------------- */
+.web {
+	display: block !important; 
+}
+
+.tab {
+    display: none !important; 
+}
+
+.mob {
+	display: none !important; 
+}
+
+.left {
+	float: left; 
+}
+
+.right {
+	float: right; 
+}
+
+.clearfix::after {
+	content: ""; 
+	display: block; 
+	clear: both; 
+}
+
+.inner {
+    position: relative; 
+    margin: auto; 
+    max-width: 1400px; 
+    height: 100%; 
+    /* background-color: rgba(255,0,0,0.1); */
+}
+
+.inner::after {
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+
+.ellipsis {
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+.hidden {
+    display: none; 
+    width: 0; 
+    height: 0; 
+    visibility: hidden;
+}
+
+#wrap {
+    transition: all 0.5s;
+}
+
+
+
+/* ---------------------------------------- HEADER ---------------------------------------- */
+.header {
+    height: 132px; 
+    background-color: #0C162C; 
+}
+
+.gnb {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.gnb .gnb-logo {
+    padding-top: 52px; 
+}
+
+.gnb .gnb-menu {
+    display: flex; 
+    justify-content: end; 
+    align-items: baseline; 
+    padding-top: 42px; 
+}
+
+.gnb .gnb-menu a {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+    margin: 0 32px; 
+    padding-bottom: 6px; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    font-weight: 600; 
+}
+
+.gnb .gnb-menu a:hover {
+    color: #FF7800; 
+}
+
+.gnb .gnb-menu a:hover::before {
+    content: ""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    height: 2px; 
+    background-color: #FF7800;
+}
+
+.gnb .gnb-menu .gnb-menu__sign {
+    margin-right: 0; 
+    padding-bottom: 0; 
+    width: 127px; 
+    height: 48px; 
+    color: #FF7800; 
+    background-color: #FFFFFF; 
+    border-radius: 20px; 
+}
+
+.gnb .gnb-menu .gnb-menu__sign:hover {
+    color: #FFFFFF; 
+    background-color: #FF7800; 
+}
+
+.gnb .gnb-menu .gnb-menu__sign:hover::before {
+    display: none; 
+}
+
+
+
+/* ---------------------------------------- FOOOTER ---------------------------------------- */
+.footer {
+    background-color: #0B1226; 
+}
+
+.foot-info1__address {
+    overflow: hidden; 
+    margin-left: -9px; 
+    padding: 58px 0 38px; 
+}
+
+.foot-info1__address p {
+    float: left; 
+    margin: 2px 9px; 
+    line-height: 1.5; 
+    color: #FFFFFF; 
+}
+
+.foot-info1__address p span {
+    padding-right: 10px; 
+    color: #575F74; 
+}
+
+.foot-info1__familysite {
+    padding-top: 66px; 
+}
+
+.foot-info1__familysite a {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 165px; 
+    height: 46px; 
+    color: #FFFFFF; 
+    font-size: 16px; 
+    border: 1px solid #FFFFFF; 
+}
+
+.foot-info2 {
+    display: flex; 
+    justify-content: space-between; 
+    padding: 40px 0 32px; 
+    border-top: 2px solid #575F74; 
+}
+
+.foot-info2 > div {
+    display: flex; 
+    align-items: center; 
+}
+
+.foot-info2 .foot-info2__copy {
+    color: #575F74; 
+    font-size: 14px; 
+}
+
+.foot-info2 .foot-info2__sns {
+    display: flex; 
+}
+
+.foot-info2 .foot-info2__sns a {
+    margin-left: 8px; 
+}
+
+
+
+
+
