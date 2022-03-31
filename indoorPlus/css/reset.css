@@ -39,7 +39,7 @@ html, body {
     color: #171717; 
     font-size: 16px; 
     font-weight: 400; 
-    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif; 
 }
 
 ul, li, ol {
@@ -70,7 +70,7 @@ input, textarea, button {
     color: #171717; 
     font-size: 16px; 
     font-weight: 400; 
-    font-family: 'Noto Sans KR', sans-serif; 
+    font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif; 
 }
 
 label, button, [type=button], [type=submit], [type=reset], a {
@@ -167,7 +167,6 @@ textarea {
 
 /* ---------------------------------------- HEADER ---------------------------------------- */
 .header {
-    height: 132px; 
     background-color: #0C162C; 
 }
 
@@ -177,7 +176,7 @@ textarea {
 }
 
 .gnb .gnb-logo {
-    padding-top: 52px; 
+    padding: 52px 0; 
 }
 
 .gnb .gnb-menu {
@@ -296,8 +295,3 @@ textarea {
 .foot-info2 .foot-info2__sns a {
     margin-left: 8px; 
 }
-
-
-
-
-
