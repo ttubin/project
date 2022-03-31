@@ -10,6 +10,14 @@ const partnerSwiper = new Swiper('.swiper.partner-slider', {
 const numberSwiper = new Swiper('.swiper.numbers-slider', {
     loop: true, 
     speed: 1000, 
-    slidesPerView: 3,
-    centeredSlides: true
+    centeredSlides: true,
+    breakpoints: {
+        375: {
+            slidesPerView: 1
+        },
+        
+        1920: {
+            slidesPerView: 3,
+        },
+    }
 });
