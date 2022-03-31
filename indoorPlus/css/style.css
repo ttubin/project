@@ -201,6 +201,8 @@
 
 .examples-list .example-txt {
     padding: 28px 42px; 
+    height: 200px; 
+    max-height: 250px; 
     background-color: #FFFFFF; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.02); 
 }

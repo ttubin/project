@@ -181,8 +181,6 @@ textarea {
 
 .gnb .gnb-menu {
     display: flex; 
-    justify-content: end; 
-    align-items: baseline; 
     padding-top: 42px; 
 }
 
